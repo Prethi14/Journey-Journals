@@ -1,0 +1,124 @@
+/* Basic layout and styling */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(to right, #ff9e4f, #ff6b6b);
+    background-attachment: fixed;
+    padding: 20px;
+}
+
+.dashboard-header {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-header h1 {
+    margin: 0;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+.dashboard-main {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.media-upload,
+.blog-editor {
+    flex-basis: calc(50% - 20px);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.media-upload h2,
+.blog-editor h2 {
+    color: #ff9e4f;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.upload-zone {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.upload-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ff9e4f;
+    color: #fff;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+    background-color: #ff784f;
+}
+
+.uploaded-media-list {
+    list-style: none;
+    padding: 0;
+}
+
+.uploaded-media-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.uploaded-media-list li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.uploaded-media-list li img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid #ff9e4f;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.blog-editor textarea {
+    width: 75%;
+    height: 300px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+}
+
+/* Hover effects */
+.editor-tools i:hover {
+    color: #ff9e4f;
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
